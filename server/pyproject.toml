@@ -1,0 +1,13 @@
+[project]
+name = "actik-server"
+version = "0.1.0"
+description = "FastAPI backend server/api for digital academic credentials verification"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "pydantic>=2.12.5",
+    "pydantic-settings>=2.12.0",
+    "fastapi[standard]>=0.128.0",
+    "starlette>=0.50.0",
+    "uvicorn>=0.40.0",
+]
