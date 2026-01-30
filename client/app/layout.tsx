@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "actik",
-  description: "Academic Doc Detection",
+  description: "Academic Credentials Verificaiton",
 
   icons: {
     icon: [
@@ -40,7 +40,7 @@ export default function RootLayout({
       >
         <ThemeProvider
           attribute="class"
-          defaultTheme="dark"
+          defaultTheme="light"
           enableSystem
           disableTransitionOnChange
         >

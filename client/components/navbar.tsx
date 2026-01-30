@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import React from "react";
 import { cn } from "@/lib/utils";
 import { useScroll } from "motion/react";
+import { ModeToggle } from "./ui/mode-toggle";
 
 const menuItems = [
   { name: "Features", href: "#link" },
@@ -98,6 +99,7 @@ export const Navbar = () => {
                     <span>Sign Up</span>
                   </Link>
                 </Button>
+                <ModeToggle />
               </div>
             </div>
           </div>

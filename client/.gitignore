@@ -41,6 +41,6 @@ yarn-error.log*
 next-env.d.ts
 
 public/login-dark.png
-public/login.png
+public/login-light.png
 public/signup-dark.png
-public/signup.png
+public/signup-light.png

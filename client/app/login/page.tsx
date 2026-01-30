@@ -1,7 +1,10 @@
-import { GalleryVerticalEnd } from "lucide-react";
-
 import { LoginForm } from "@/components/login-form";
 import { Logo } from "@/components/logo";
+
+import Image from "next/image";
+import login_light from "@/public/login-light.png";
+import login_dark from "@/public/login-dark.png";
+import { Freepixel } from "@/components/ui/freepixel";
 
 export default function LoginPage() {
   return (
@@ -17,16 +20,17 @@ export default function LoginPage() {
         </div>
       </div>
       <div className="bg-muted relative hidden lg:block">
-        <img
-          src="/login.png"
-          alt="Image"
+        <Image
+          src={login_light}
+          alt="login-light"
           className="absolute inset-0 h-full w-full object-cover block dark:hidden"
         />
-        <img
-          src="/login-dark.png"
-          alt="Image"
+        <Image
+          src={login_dark}
+          alt="login-dark"
           className="absolute inset-0 h-full w-full object-cover hidden dark:block"
         />
+        <Freepixel />
       </div>
     </div>
   );

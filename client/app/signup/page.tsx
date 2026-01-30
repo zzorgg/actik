@@ -1,7 +1,10 @@
-import { GalleryVerticalEnd } from "lucide-react";
+import Image from "next/image";
 
 import { SignupForm } from "@/components/signup-form";
 import { Logo } from "@/components/logo";
+import signup_light from "@/public/signup-light.png";
+import signup_dark from "@/public/signup-dark.png";
+import { Freepixel } from "@/components/ui/freepixel";
 
 export default function SignupPage() {
   return (
@@ -17,16 +20,17 @@ export default function SignupPage() {
         </div>
       </div>
       <div className="bg-muted relative hidden lg:block">
-        <img
-          src="/signup.png"
-          alt="Image"
+        <Image
+          src={signup_light}
+          alt="signup-light"
           className="absolute inset-0 h-full w-full object-cover block dark:hidden"
         />
-        <img
-          src="/dark.png"
-          alt="Image"
+        <Image
+          src={signup_dark}
+          alt="signup-dark"
           className="absolute inset-0 h-full w-full object-cover hidden dark:block"
         />
+        <Freepixel />
       </div>
     </div>
   );
