@@ -5,6 +5,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from starlette.status import HTTP_200_OK
 
 from app.core.settings import settings
+from app.institution.router import router as institution_router
 
 logging.basicConfig(
     level=logging.INFO, format="%(asctime)s - %(name) - %(levelname)s - %(message)s"
@@ -24,6 +25,8 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+app.include_router(institution_router, prefix=settings.API_PREFIX)
 
 
 @app.get("/", status_code=HTTP_200_OK)
